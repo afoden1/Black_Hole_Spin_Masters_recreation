@@ -103,6 +103,11 @@ while ii <= 1000 and BH_mass < 1e10:
 
     Kerr_spin = bh_func.calculate_spin_parameter(BH_ang_mom, BH_mass_kg, schwarzchild_radius)
 
+    if ii % 100 == 0:
+        text_print = str(ii)
+        print(text_print)
+        print("\n")
+
     ii += 1
 
 #Add the final updates to the records
